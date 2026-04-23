@@ -18,11 +18,11 @@ Create a new repository on GitHub or GitLab (e.g., `Software_developement_tools_
 git clone https://github.com/WassimMgg/Software_developement_tools_report.git
 ```
 
-![Cloning the repository](Screenshots/Screenshot_2026-04-14_012411.png)
+![Cloning the repository](Screenshots/Cloning_the_repository.png)
 
 After running the command, Git clones the remote repository to your local machine:
 
-![Clone output](Screenshots/Screenshot_2026-04-14_012434.png)
+![Clone output](Screenshots/Clone_Output.png)
 
 ---
 
@@ -45,7 +45,7 @@ git add .
 git commit -m "Add main.py to my github repo"
 ```
 
-![First commit](Screenshots/Screenshot_2026-04-14_012744.png)
+![First commit](Screenshots/First_Commit.png)
 
 ---
 
@@ -58,7 +58,7 @@ git add main.py
 git commit -m "Create a Simple Calculator"
 ```
 
-![Create calculator commit](Screenshots/Screenshot_2026-04-14_013052.png)
+![Create calculator commit](Screenshots/Create_Calculato_Commit.png)
 
 ---
 
@@ -71,7 +71,7 @@ git add main.py
 git commit -m "Added a list (results_table) to store all operations"
 ```
 
-![Results table commit](Screenshots/Screenshot_2026-04-14_014239.png)
+![Results table commit](Screenshots/Results_Table_Commit.png)
 
 ---
 
@@ -84,7 +84,7 @@ git add main.py
 git commit -m "Enhance this Calculator to a small application"
 ```
 
-![Enhance application commit](Screenshots/Screenshot_2026-04-14_014809.png)
+![Enhance application commit](Screenshots/Enhace_Application_Commit.png)
 
 ---
 
@@ -102,13 +102,13 @@ Use `git log` to inspect the full history of commits:
 git log
 ```
 
-![Git log output](Screenshots/Screenshot_2026-04-14_014906.png)
+![Git log output](Screenshots/Git_Log_Output.png)
 
 The log shows all commits in reverse chronological order, including:
 - **HEAD → main** — the current local state
 - **origin/main, origin/HEAD** — the last known state of the remote
 
-![Git log – local commits only](Screenshots/Screenshot_2026-04-23_165657.png)
+![Git log – local commits only](Screenshots/Git_Log_Local_Commit.png)
 
 ---
 
@@ -122,13 +122,13 @@ git blame main.py
 
 Each line is prefixed with the commit hash, author name, and timestamp:
 
-![Git blame – part 1](Screenshots/Screenshot_2026-04-23_170058.png)
+![Git blame – part 1](Screenshots/Git_Blame_part1.png)
 
-![Git blame – part 2](Screenshots/Screenshot_2026-04-23_170125.png)
+![Git blame – part 2](Screenshots/Git_Blame_part2.png)
 
-![Git blame – part 3](Screenshots/Screenshot_2026-04-23_170148.png)
+![Git blame – part 3](Screenshots/Git_Blame_part3.png)
 
-![Git blame – part 4](Screenshots/Screenshot_2026-04-23_170216.png)
+![Git blame – part 4](Screenshots/Git_Blame_part4.png)
 
 In the output you can see that different lines were introduced in different commits (`994d745f`, `eea6effd`, `8fea2941`), making it easy to trace the origin of each piece of code.
 
@@ -138,7 +138,7 @@ In the output you can see that different lines were introduced in different comm
 
 Add new code to the project (e.g., add a line to tell the user to choose a valid option from the menu), but **do not commit** yet:
 
-![Uncommitted changes in editor](Screenshots/Screenshot_2026-04-23_170402.png)
+![Uncommitted changes in editor](Screenshots/Uncommited_Changes.png)
 
 ---
 
@@ -150,11 +150,11 @@ If a `git revert` fails because of uncommitted local changes, Git will warn you 
 git revert 994d745f6160118ec1d75edd3411111da6c55376
 ```
 
-![Git revert error – uncommitted changes](Screenshots/Screenshot_2026-04-23_171317.png)
+![Git revert error – uncommitted changes](Screenshots/Git_Revert_Error.png)
 
 After committing or stashing the local changes, the revert can proceed. Git opens an editor to confirm the revert commit message:
 
-![Git revert commit message editor](Screenshots/Screenshot_2026-04-23_171821.png)
+![Git revert commit message editor](Screenshots/Git_Revert_Commit.png)
 
 ---
 
@@ -166,7 +166,7 @@ Once all local commits are ready, push them to the remote repository:
 git push
 ```
 
-![Git push output](Screenshots/Screenshot_2026-04-23_172342.png)
+![Git push output](Screenshots/Git_Push.png)
 
 ---
 
@@ -174,7 +174,7 @@ git push
 
 To simulate starting fresh, delete the local project folder entirely:
 
-![Delete local folder dialog](Screenshots/Screenshot_2026-04-23_172434.png)
+![Delete local folder dialog](Screenshots/Delete_Local_Folder.png)
 
 ---
 
@@ -186,7 +186,7 @@ Re-clone the repository from GitHub to restore the project locally:
 git clone https://github.com/WassimMgg/Software_developement_tools_report.git
 ```
 
-![Re-clone from remote](Screenshots/Screenshot_2026-04-23_172624.png)
+![Re-clone from remote](Screenshots/Re-clone.png)
 
 ---
 
@@ -200,9 +200,9 @@ git tag
 git push origin v1.0
 ```
 
-![Git tag creation and push](Screenshots/Screenshot_2026-04-23_172949.png)
+![Git tag creation and push](Screenshots/Git_Tag_Creation.png)
 
-![Git tag – full output with push](Screenshots/Screenshot_2026-04-23_173043.png)
+![Git tag – full output with push](Screenshots/Git_Tag_Push.png)
 
 ---
 
@@ -214,7 +214,7 @@ First, confirm the current branches, then create a new branch:
 git branch
 ```
 
-![Git branch – only main exists](Screenshots/Screenshot_2026-04-23_173218.png)
+![Git branch – only main exists](Screenshots/Git_Branch_Main.png)
 
 A new branch (e.g., `new_branch`) can then be created with:
 
@@ -254,9 +254,9 @@ git merge new_branch
 git push
 ```
 
-![Git merge new_branch into main](Screenshots/Screenshot_2026-04-23_174315.png)
+![Git merge new_branch into main](Screenshots/Git_Merge.png)
 
-![Git push after merge](Screenshots/Screenshot_2026-04-23_174440.png)
+![Git push after merge](Screenshots/Git_Push_After_Merge.png)
 
 The fast-forward merge updates `main` with all the commits from `new_branch` (`1 file changed, 101 insertions(+), 76 deletions(-)`).
 

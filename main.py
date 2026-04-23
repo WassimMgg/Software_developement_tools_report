@@ -93,3 +93,4 @@ while True:
 
     else:
         print("❌ Invalid choice.")
+        print("Please choose a valid option from the menu.") 

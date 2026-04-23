@@ -122,13 +122,13 @@ git blame main.py
 
 Each line is prefixed with the commit hash, author name, and timestamp:
 
-![Git blame – part 1](Screenshots/Git_Blame_part1.png)
+![Git blame – part 1](Screenshots/Git_Blame_Part1.png)
 
-![Git blame – part 2](Screenshots/Git_Blame_part2.png)
+![Git blame – part 2](Screenshots/Git_Blame_Part2.png)
 
-![Git blame – part 3](Screenshots/Git_Blame_part3.png)
+![Git blame – part 3](Screenshots/Git_Blame_Part3.png)
 
-![Git blame – part 4](Screenshots/Git_Blame_part4.png)
+![Git blame – part 4](Screenshots/Git_Blame_Part4.png)
 
 In the output you can see that different lines were introduced in different commits (`994d745f`, `eea6effd`, `8fea2941`), making it easy to trace the origin of each piece of code.
 

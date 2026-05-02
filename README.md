@@ -296,7 +296,3 @@ git merge <branch>            # Merge a branch into the current one
 git pull origin <branch>      # Fetch and merge from remote
 ```
 
----
-
-> **Author:** WassimMgg  
-> **Repository:** [Software_developement_tools_report](https://github.com/WassimMgg/Software_developement_tools_report)
